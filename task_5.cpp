@@ -9,5 +9,6 @@ int main() {
     std::cout << "x > y" << std::endl;
     else 
     std::cout << "x < y" << std::endl; 
+    std::cout << "Hello world!";
     return 0;
 }
