@@ -7,13 +7,16 @@ int main() {
     std::cout << "Enter y: ";
     std::cin >> y;
     if(x > y) 
-    a = true;
+        a = true;
     else 
-    a = false;
+        a = false;
     
-    if (a == true) 
-    std::cout << "x > y" << std::endl;
-     if (a == false) 
-    std::cout << "x < y" << std::endl; 
+
+
+    
+    if (a == true)
+        std::cout << "x > y" << std::endl;
+    if (a == false)
+        std::cout << "x < y" << std::endl; 
     return 0;
 }
