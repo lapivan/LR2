@@ -1,22 +1,18 @@
 #include <iostream>
 int main() {
-    double x, y;
+    float x, y, z;
+    int s;
     bool a;
+    char c = '>';
+
     std::cout << "Enter x: ";
     std::cin >> x;
     std::cout << "Enter y: ";
     std::cin >> y;
-    if(x > y) 
-        a = true;
-    else 
-        a = false;
-    
+    z = x - y;
+    s = (int)z & 0x80000000;
+    a = (bool)s;
 
-
-    
-    if (a == true)
-        std::cout << "x > y" << std::endl;
-    if (a == false)
-        std::cout << "x < y" << std::endl; 
+    std::cout << "x " << (char )(c-(char)a-(char)a) << " y" << std::endl; 
     return 0;
 }
